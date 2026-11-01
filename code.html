@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CIT Board source</title>
+<style>
+  body { margin:0; background:#101816; color:#f4f0e6; font:16px/1.4 system-ui,sans-serif; }
+  main { padding:20px 16px 48px; max-width:720px; margin:0 auto; }
+  h1 { font-size:28px; margin:0 0 8px; }
+  p { color:#b7aea2; }
+  a.btn { display:flex; align-items:center; justify-content:center; height:56px; margin:16px 0; background:#2fbfb3; color:#04221f; font-weight:700; text-decoration:none; border-radius:12px; }
+  ul { padding:0; list-style:none; }
+  li { border-top:1px solid #314740; }
+  li a { display:block; padding:12px 4px; color:#f4f0e6; text-decoration:none; word-break:break-all; }
+</style>
+</head>
+<body>
+<main>
+  <h1>CIT Board source</h1>
+  <p>109 code files. Tap the button to save the zip, or tap a file to read it.</p>
+  <a class="btn" id="zip" href="cit-source.zip">Download cit-source.zip</a>
+  <ul>
+  <li><a href="code/.env.example">.env.example</a></li>
+<li><a href="code/.gitignore">.gitignore</a></li>
+<li><a href="code/.prettierrc">.prettierrc</a></li>
+<li><a href="code/AI_USAGE.md">AI_USAGE.md</a></li>
+<li><a href="code/README.md">README.md</a></li>
+<li><a href="code/THIRD_PARTY.md">THIRD_PARTY.md</a></li>
+<li><a href="code/eslint.config.mjs">eslint.config.mjs</a></li>
+<li><a href="code/migrations/auth/0001_auth.sql">migrations/auth/0001_auth.sql</a></li>
+<li><a href="code/package-lock.json">package-lock.json</a></li>
+<li><a href="code/package.json">package.json</a></li>
+<li><a href="code/scripts/app-env-plugin.mjs">scripts/app-env-plugin.mjs</a></li>
+<li><a href="code/scripts/brand-check.mjs">scripts/brand-check.mjs</a></li>
+<li><a href="code/scripts/brand-check.test.mjs">scripts/brand-check.test.mjs</a></li>
+<li><a href="code/scripts/browser-guard.mjs">scripts/browser-guard.mjs</a></li>
+<li><a href="code/scripts/browser-smoke-verdict.mjs">scripts/browser-smoke-verdict.mjs</a></li>
+<li><a href="code/scripts/browser-smoke-verdict.test.mjs">scripts/browser-smoke-verdict.test.mjs</a></li>
+<li><a href="code/scripts/browser-smoke.mjs">scripts/browser-smoke.mjs</a></li>
+<li><a href="code/scripts/check-auth-invariant.mjs">scripts/check-auth-invariant.mjs</a></li>
+<li><a href="code/scripts/check-auth-invariant.test.mjs">scripts/check-auth-invariant.test.mjs</a></li>
+<li><a href="code/scripts/grok-pwa-plugin.mjs">scripts/grok-pwa-plugin.mjs</a></li>
+<li><a href="code/scripts/grok-pwa-plugin.test.mjs">scripts/grok-pwa-plugin.test.mjs</a></li>
+<li><a href="code/scripts/grok-pwa-shared.mjs">scripts/grok-pwa-shared.mjs</a></li>
+<li><a href="code/scripts/install-page.html">scripts/install-page.html</a></li>
+<li><a href="code/scripts/migrate.mjs">scripts/migrate.mjs</a></li>
+<li><a href="code/scripts/migration-plan.mjs">scripts/migration-plan.mjs</a></li>
+<li><a href="code/scripts/migration-plan.test.mjs">scripts/migration-plan.test.mjs</a></li>
+<li><a href="code/scripts/preview-thumbnail.mjs">scripts/preview-thumbnail.mjs</a></li>
+<li><a href="code/scripts/preview.mjs">scripts/preview.mjs</a></li>
+<li><a href="code/scripts/preview.test.mjs">scripts/preview.test.mjs</a></li>
+<li><a href="code/scripts/sign-out-plan.mjs">scripts/sign-out-plan.mjs</a></li>
+<li><a href="code/scripts/sign-out-plan.test.mjs">scripts/sign-out-plan.test.mjs</a></li>
+<li><a href="code/scripts/with-app-env.mjs">scripts/with-app-env.mjs</a></li>
+<li><a href="code/scripts/with-app-env.test.mjs">scripts/with-app-env.test.mjs</a></li>
+<li><a href="code/scripts/write-atomic.mjs">scripts/write-atomic.mjs</a></li>
+<li><a href="code/scripts/write-atomic.test.mjs">scripts/write-atomic.test.mjs</a></li>
+<li><a href="code/server/middleware/grok-pwa.ts">server/middleware/grok-pwa.ts</a></li>
+<li><a href="code/server/virtual-grok-og-identity.d.ts">server/virtual-grok-og-identity.d.ts</a></li>
+<li><a href="code/src/components/cit/grid.tsx">src/components/cit/grid.tsx</a></li>
+<li><a href="code/src/components/cit/pages.tsx">src/components/cit/pages.tsx</a></li>
+<li><a href="code/src/components/cit/shell.tsx">src/components/cit/shell.tsx</a></li>
+<li><a href="code/src/components/cit/ui.tsx">src/components/cit/ui.tsx</a></li>
+<li><a href="code/src/components/preview-host-bridge.tsx">src/components/preview-host-bridge.tsx</a></li>
+<li><a href="code/src/lib/app-data/app-data.test.ts">src/lib/app-data/app-data.test.ts</a></li>
+<li><a href="code/src/lib/app-data/client.server.ts">src/lib/app-data/client.server.ts</a></li>
+<li><a href="code/src/lib/app-data/errors.ts">src/lib/app-data/errors.ts</a></li>
+<li><a href="code/src/lib/app-data/index.ts">src/lib/app-data/index.ts</a></li>
+<li><a href="code/src/lib/app-data/login.ts">src/lib/app-data/login.ts</a></li>
+<li><a href="code/src/lib/app-data/readiness-schedule.test.ts">src/lib/app-data/readiness-schedule.test.ts</a></li>
+<li><a href="code/src/lib/app-data/readiness-schedule.ts">src/lib/app-data/readiness-schedule.ts</a></li>
+<li><a href="code/src/lib/app-data/readiness.ts">src/lib/app-data/readiness.ts</a></li>
+<li><a href="code/src/lib/app-data/server-only.ts">src/lib/app-data/server-only.ts</a></li>
+<li><a href="code/src/lib/app-data/types.ts">src/lib/app-data/types.ts</a></li>
+<li><a href="code/src/lib/app-data/use-connector-readiness.ts">src/lib/app-data/use-connector-readiness.ts</a></li>
+<li><a href="code/src/lib/auth/client.ts">src/lib/auth/client.ts</a></li>
+<li><a href="code/src/lib/auth/email-password.ts">src/lib/auth/email-password.ts</a></li>
+<li><a href="code/src/lib/auth/gate-identity.server.ts">src/lib/auth/gate-identity.server.ts</a></li>
+<li><a href="code/src/lib/auth/gate-identity.test.ts">src/lib/auth/gate-identity.test.ts</a></li>
+<li><a href="code/src/lib/auth/gate-session-marker.ts">src/lib/auth/gate-session-marker.ts</a></li>
+<li><a href="code/src/lib/auth/gate-session.server.ts">src/lib/auth/gate-session.server.ts</a></li>
+<li><a href="code/src/lib/auth/gates.tsx">src/lib/auth/gates.tsx</a></li>
+<li><a href="code/src/lib/auth/isolation.server.ts">src/lib/auth/isolation.server.ts</a></li>
+<li><a href="code/src/lib/auth/middleware.ts">src/lib/auth/middleware.ts</a></li>
+<li><a href="code/src/lib/auth/pglite-dialect.ts">src/lib/auth/pglite-dialect.ts</a></li>
+<li><a href="code/src/lib/auth/popup.server.ts">src/lib/auth/popup.server.ts</a></li>
+<li><a href="code/src/lib/auth/preview.ts">src/lib/auth/preview.ts</a></li>
+<li><a href="code/src/lib/auth/provider.tsx">src/lib/auth/provider.tsx</a></li>
+<li><a href="code/src/lib/auth/providers.ts">src/lib/auth/providers.ts</a></li>
+<li><a href="code/src/lib/auth/server.ts">src/lib/auth/server.ts</a></li>
+<li><a href="code/src/lib/auth/sign-in-gate.test.ts">src/lib/auth/sign-in-gate.test.ts</a></li>
+<li><a href="code/src/lib/auth/sign-in-gate.ts">src/lib/auth/sign-in-gate.ts</a></li>
+<li><a href="code/src/lib/auth/use-current-user.ts">src/lib/auth/use-current-user.ts</a></li>
+<li><a href="code/src/lib/auth/verify.server.ts">src/lib/auth/verify.server.ts</a></li>
+<li><a href="code/src/lib/cit/dataset.ts">src/lib/cit/dataset.ts</a></li>
+<li><a href="code/src/lib/cit/engine.ts">src/lib/cit/engine.ts</a></li>
+<li><a href="code/src/lib/cit/explain.ts">src/lib/cit/explain.ts</a></li>
+<li><a href="code/src/lib/cit/labels.ts">src/lib/cit/labels.ts</a></li>
+<li><a href="code/src/lib/cit/parse.ts">src/lib/cit/parse.ts</a></li>
+<li><a href="code/src/lib/cit/selfcheck.ts">src/lib/cit/selfcheck.ts</a></li>
+<li><a href="code/src/lib/cit/store.ts">src/lib/cit/store.ts</a></li>
+<li><a href="code/src/lib/cit/time.ts">src/lib/cit/time.ts</a></li>
+<li><a href="code/src/lib/cit/types.ts">src/lib/cit/types.ts</a></li>
+<li><a href="code/src/lib/db.ts">src/lib/db.ts</a></li>
+<li><a href="code/src/lib/env.server.ts">src/lib/env.server.ts</a></li>
+<li><a href="code/src/lib/error-component.tsx">src/lib/error-component.tsx</a></li>
+<li><a href="code/src/lib/multiplayer/index.ts">src/lib/multiplayer/index.ts</a></li>
+<li><a href="code/src/lib/multiplayer/p2p.ts">src/lib/multiplayer/p2p.ts</a></li>
+<li><a href="code/src/lib/og/site.json">src/lib/og/site.json</a></li>
+<li><a href="code/src/lib/preview-embedder-origin.ts">src/lib/preview-embedder-origin.ts</a></li>
+<li><a href="code/src/lib/preview-host-bridge.ts">src/lib/preview-host-bridge.ts</a></li>
+<li><a href="code/src/lib/preview-path-prefix.test.ts">src/lib/preview-path-prefix.test.ts</a></li>
+<li><a href="code/src/lib/preview-path-prefix.ts">src/lib/preview-path-prefix.ts</a></li>
+<li><a href="code/src/routeTree.gen.ts">src/routeTree.gen.ts</a></li>
+<li><a href="code/src/router.tsx">src/router.tsx</a></li>
+<li><a href="code/src/routes/__root.tsx">src/routes/__root.tsx</a></li>
+<li><a href="code/src/routes/_app/changes.tsx">src/routes/_app/changes.tsx</a></li>
+<li><a href="code/src/routes/_app/desk.tsx">src/routes/_app/desk.tsx</a></li>
+<li><a href="code/src/routes/_app/exams.tsx">src/routes/_app/exams.tsx</a></li>
+<li><a href="code/src/routes/_app/index.tsx">src/routes/_app/index.tsx</a></li>
+<li><a href="code/src/routes/_app/manual.tsx">src/routes/_app/manual.tsx</a></li>
+<li><a href="code/src/routes/_app/office.tsx">src/routes/_app/office.tsx</a></li>
+<li><a href="code/src/routes/_app/timetable.tsx">src/routes/_app/timetable.tsx</a></li>
+<li><a href="code/src/routes/_app/venues.tsx">src/routes/_app/venues.tsx</a></li>
+<li><a href="code/src/routes/_app/why.tsx">src/routes/_app/why.tsx</a></li>
+<li><a href="code/src/routes/_app.tsx">src/routes/_app.tsx</a></li>
+<li><a href="code/src/styles.css">src/styles.css</a></li>
+<li><a href="code/startup.sh">startup.sh</a></li>
+<li><a href="code/tsconfig.json">tsconfig.json</a></li>
+<li><a href="code/vercel.json">vercel.json</a></li>
+<li><a href="code/vite.config.ts">vite.config.ts</a></li>
+  </ul>
+</main>
+<script>
+  const base = location.pathname.replace(/code\.html$/, "");
+  const zip = document.getElementById("zip");
+  zip.href = base + "cit-source.zip";
+  for (const a of document.querySelectorAll("ul a")) {
+    const name = a.getAttribute("href");
+    a.href = base + name;
+  }
+</script>
+</body>
+</html>
